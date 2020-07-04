@@ -2,6 +2,25 @@
  * Globals
  */
 
+/* Mobile Navigation*/
+.nav-masthead {
+  
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 20px;
+    background: none;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: left;
+
+    color: #ffffff;
+}
+
+
 /* Links */
 a,
 a:focus,
@@ -10,15 +29,18 @@ a:hover {
 }
 
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
+.btn-secondary {
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  color: #37b3ed;
+}
 .btn-secondary:focus {
-  color: #333;
+  
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
 }
-
 
 /*
  * Base structure
@@ -26,6 +48,7 @@ a:hover {
 
 html,
 body {
+  font-family: "Open Sans", sans-serif;
   height: 100%;
   background-color: #333;
 }
@@ -39,19 +62,29 @@ body {
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 40%;
 }
 
 
 /*
  * Header
  */
-.masthead {
-  margin-bottom: 2rem;
-}
 
+.masthead-brand:hover {
+  color: rgb(218, 218, 218);
+}
 .masthead-brand {
-  margin-bottom: 0;
+  /*margin-bottom: 0; */
+  
+    z-index: 00;
+    border: 0;
+    font-size: 24px;
+    background: none;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: left;
 }
 
 .nav-masthead .nav-link {
@@ -85,10 +118,18 @@ body {
   }
 }
 
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+}
 
-/*
- * Cover
- */
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* Cover */
 .cover {
   padding: 0 1.5rem;
 }
@@ -97,10 +138,21 @@ body {
   font-weight: 700;
 }
 
+.cover-heading {
+  font-size: 30px;
 
-/*
- * Footer
- */
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #37b3ed;
+  text-decoration: none;
+}
+
+/* Footer */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
